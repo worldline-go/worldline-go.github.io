@@ -1,0 +1,28 @@
+<div x-data x-show="$store.selection.active == 'files'" x-init="$el.classList.remove('hidden')" class="py-2 flex gap-2 hidden">
+    <table class="w-full">
+        <thead>
+            <tr>
+                <th class="text-left">Name</th>
+                <th class="text-left">Size</th>
+                <th class="text-left">Modified</th>
+            </tr>
+        </thead>
+        <tbody @click.capture="(e) => listDir(e)">
+            {{ range $k, $v := .files }}
+            {{ if not (empty .url) }}
+            <tr class="item-list" data-url="{{$v.url}}" data-open="{{$k}}" data-type="{{ternary "dir" "file" $v.isDir}}" data-inner="1">
+                <td>
+                    📁 {{$k}}
+                </td>
+                <td>
+                    {{ default "-" $v.size }}
+                </td>
+                <td>
+                    {{ default "-" $v.modTime }}
+                </td>
+            </tr>
+            {{ end }}
+            {{ end }}
+        </tbody>
+    </table>
+</div>

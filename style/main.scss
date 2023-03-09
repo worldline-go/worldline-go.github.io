@@ -1,0 +1,63 @@
+/* TailwindCSS base styles */
+/* see https://tailwindcss.com/docs/functions-and-directives#tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+/* Custom styles */
+html {
+    @apply h-full;
+
+}
+body {
+    @apply h-full;
+    font-family: Inconsolata,monospace;
+}
+
+::selection {
+    background-color: #c9f3fd;
+    color: #000;
+}
+
+.repo-button {
+    @apply bg-bg-light hover:bg-hl hover:text-black border border-b-0 border-gray-300 px-2;
+}
+
+.repo-active, .repo-active-init {
+    @apply bg-gray-300 text-black;
+}
+
+.dot {
+    background: url(
+        data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAAXNSR0IArs4c6QAAABxJREFUGFdj9AwI/799w0pGGM3IgAbgMjBxDBUAUkAMBXz21MYAAAAASUVORK5CYII=
+        ) repeat;
+}
+
+.line, .line-init {
+    background: url(
+        data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAAXNSR0IArs4c6QAAAB1JREFUGFdjZEACvTPX/WdEFgCxMQVAyorTg+ASAMydBtj83Eo1AAAAAElFTkSuQmCC
+        ) repeat;
+}
+
+.repo-item {
+    @apply border border-gray-300 bg-bg-light;
+
+    &:hover > title {
+        @apply bg-hl;
+    }
+
+    &:hover > span {
+        @apply dot;
+    }
+}
+
+.item-list {
+    @apply border-b border-t border-gray-300 bg-bg-light;
+    td {
+        @apply cursor-pointer;
+    }
+    &:hover > td {
+        @apply bg-gray-300 text-black;
+    }
+}

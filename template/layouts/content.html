@@ -1,0 +1,18 @@
+<div class="container mx-auto py-4 md:flex md:flex-row-reverse md:gap-2 px-1">
+    <div class="basis-1/4 max-md:mb-2">
+        {{ template "side.html" . }}
+    </div>
+    <div class="flex-1">
+        <div class="px-2 bg-bg-light border border-hl dot">
+            <span>{{.info}}</span>
+        </div>
+        <div class="py-2">
+            <div class="border-b border-gray-300 block">
+                <button x-data :class="$store.selection.active == 'repos' && 'repo-active' || 'line'" @click="$store.selection.select('repos')" x-init="$el.classList.remove('repo-active-init')" class="repo-button repo-active-init">Repos</button>
+                <button x-data :class="$store.selection.active == 'files' && 'repo-active' || 'line'" @click="$store.selection.select('files')" x-init="$el.classList.remove('line-init')" class="repo-button line-init">Files</button>
+            </div>
+            {{ template "repos.html" . }}
+            {{ template "files.html" . }}
+        </div>
+    </div>
+</div>

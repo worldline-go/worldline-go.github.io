@@ -1,0 +1,60 @@
+bin: ./node_modules/.bin
+site:
+  title: wordline-go
+  style: style/main.scss
+  script: script/main.js
+export: ./public
+
+info: Worline finops-backoffice's documentation page for the open source projects.
+
+files:
+  tell:
+    isDir: true
+    url: https://worldline-go.github.io/tell/info.json
+
+repos:
+  - name: chore
+    url: https://github.com/worldline-go/chore
+    info: Requests with control-flows
+  - name: turna
+    url: https://github.com/worldline-go/turna
+    info: Reverse proxy and process manager
+  - name: igconfig
+    url: https://github.com/worldine-go/igconfig
+    info: Load configuration from vault, consul, environment, files, command line
+  - name: tell
+    url: https://github.com/worldline-go/tell
+    info: OpenTelemetry helper library
+  - name: auth
+    url: https://github.com/worldline-go/auth
+    info: Authentication and authorization library
+  - name: struct2
+    url: https://github.com/worldline-go/struct2
+    info: Struct to map and map to struct, modified version of mapstructure,structs
+  - name: logz
+    url: https://github.com/worldline-go/logz
+    info: Zerolog adapters and initializer
+  - name: utility
+    url: https://github.com/worldline-go/utility
+    info: Utility modules for Go
+  - name: choreograph
+    url: https://github.com/worldline-go/choreograph
+    info: A sequentially executing processor
+  - name: pong
+    url: https://github.com/worldline-go/pong
+    info: Ping and health check library
+  - name: igmigrator
+    url: https://github.com/worldline-go/igmigrator
+    info: SQL database migration library
+  - name: hardloop
+    url: https://github.com/worldline-go/hardloop
+    info: Keep function running in specific time ranges in Go
+  - name: trange
+    url: https://github.com/worldline-go/trange
+    info: Get time range by given date
+  - name: docker-image-scanner
+    url: https://github.com/worldline-go/docker-image-scanner
+    info: Security Vulnerability and Compliance Audit Scanner
+  - name: guide
+    url: https://github.com/worldline-go/guide
+    info: Code Style Guide

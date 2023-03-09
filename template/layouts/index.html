@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="worldline-go">
+    <meta name="description" content="Worldine finops-backoffice's documentation page for the open source projects.">
+    <meta name="keywords" content="worldline-go,worldline">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="worldline-go">
+    <title>{{.site.title}}</title>
+    {{- $style := (exec (print .bin "/postcss " .site.style) | map.Get "stdout") -}}
+    {{- $styleMd5 := crypto.MD5 $style -}}
+    {{- $styleIntegrity := print "sha256-" (crypto.SHA256B $style | crypto.Base64B) -}}
+    {{- $styleFile := print "assets/style-" $styleMd5 ".css" -}}
+    {{- file.Write (print .export "/" $styleFile) $style | nothing -}}
+    <link rel="stylesheet" href="{{$styleFile}}" integrity="{{ $styleIntegrity }}">
+    <link rel="icon" type="image/png" href="./favicon.png">
+    {{- $script := (exec (print .bin "/rollup -c") | map.Get "stdout") -}}
+    {{- $scriptMd5 := crypto.MD5 $script -}}
+    {{- $scriptIntegrity := print "sha256-" (crypto.SHA256B $script | crypto.Base64B) -}}
+    {{- $scriptFile := print "assets/script-" $scriptMd5 ".js" -}}
+    {{- file.Write (print .export "/" $scriptFile) $script | nothing -}}
+    <script src="{{$scriptFile}}" integrity="{{ $scriptIntegrity }}"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js"></script>
+</head>
+<body class="bg-bg text-white grid grid-rows-[32px_1fr_24px]">
+    {{ template "header.html" . }}
+    {{ template "content.html" . }}
+    {{ template "footer.html" . }}
+</body>
+</html>
