@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="worldline-go">
+    <meta name="description" content="Worldine finops-backoffice's documentation page for the open source projects.">
+    <meta name="keywords" content="worldline-go,worldline">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="worldline-go">
+    <title>wordline-go</title><link rel="stylesheet" href="assets/style-098b5a3f8fcb807530726c931fa849f7.css" integrity="sha256-U43NPzon6HeLoejv1BxwWXF9zQys7SdSFJ96lYJCnzM=">
+    <link rel="icon" type="image/png" href="./favicon.png"><script src="assets/script-e667f9a783480d2030b715030a626be6.js" integrity="sha256-dMqhRvsb5DUneIRDVAoJfPTrhvo5qAdtCGEOvmffSFo="></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js"></script>
+</head>
+<body class="bg-bg text-white grid grid-rows-[32px_1fr_24px]">
+    <header class="border-b border-gray-300 bg-bg-light px-1">
+    <div class="container mx-auto flex items-center justify-between leading-8 h-8">
+        <span>worldline-go</span>
+        <a class="hover:bg-hl hover:text-bg"
+            href="https://github.com/worldline-go" target="_blank"
+        >//github</a>
+    </div>
+</header>
+
+    <div class="container mx-auto py-4 md:flex md:flex-row-reverse md:gap-2 px-1">
+    <div class="basis-1/4 max-md:mb-2">
+        <div class="border border-hl px-1 bg-bg-light">
+    <span class="border-b border-white">Links</span>
+    <div class="my-1">
+        <a href="https://www.linkedin.com/company/worldlineglobal/jobs/" target="_blank" class="block fill-white hover:bg-hl hover:text-black">
+            <svg class="float-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0v24h24v-24h-24zm8 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.397-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            <span class="pl-1">
+                Worldline Jobs
+            </span>
+        </a>
+    </div>
+</div>
+    </div>
+    <div class="flex-1">
+        <div class="px-2 bg-bg-light border border-hl dot">
+            <span>Worline finops-backoffice's documentation page for the open source projects.</span>
+        </div>
+        <div class="py-2">
+            <div class="border-b border-gray-300 block">
+                <button x-data :class="$store.selection.active == 'repos' && 'repo-active' || 'line'" @click="$store.selection.select('repos')" x-init="$el.classList.remove('repo-active-init')" class="repo-button repo-active-init">Repos</button>
+                <button x-data :class="$store.selection.active == 'files' && 'repo-active' || 'line'" @click="$store.selection.select('files')" x-init="$el.classList.remove('line-init')" class="repo-button line-init">Files</button>
+            </div>
+            <div x-data x-show="$store.selection.active == 'repos'" class="py-2 flex gap-2 flex-wrap">
+    
+    <a href="https://github.com/worldline-go/chore" class="repo-item flex-1 min-w-[10rem] flex flex-col" target="_blank" title="chore">
+        <title class="bg-gray-300 block px-1 text-black overflow-hidden text-ellipsis whitespace-nowrap">
+            chore
+        </title>
+        <span class="px-1 block bg-bg-light flex-1">
+            Requests with control-flows
+        </span>
+    </a>
+    
+    <a href="https://github.com/worldline-go/turna" class="repo-item flex-1 min-w-[10rem] flex flex-col" target="_blank" title="turna">
+        <title class="bg-gray-300 block px-1 text-black overflow-hidden text-ellipsis whitespace-nowrap">
+            turna
+        </title>
+        <span class="px-1 block bg-bg-light flex-1">
+            Reverse proxy and process manager
+        </span>
+    </a>
+    
+    <a href="https://github.com/worldine-go/igconfig" class="repo-item flex-1 min-w-[10rem] flex flex-col" target="_blank" title="igconfig">
+        <title class="bg-gray-300 block px-1 text-black overflow-hidden text-ellipsis whitespace-nowrap">
+            igconfig
+        </title>
+        <span class="px-1 block bg-bg-light flex-1">
+            Load configuration from vault, consul, environment, files, command line
+        </span>
+    </a>
+    
+    <a href="https://github.com/worldline-go/tell" class="repo-item flex-1 min-w-[10rem] flex flex-col" target="_blank" title="tell">
+        <title class="bg-gray-300 block px-1 text-black overflow-hidden text-ellipsis whitespace-nowrap">
+            tell
+        </title>
+        <span class="px-1 block bg-bg-light flex-1">
+            OpenTelemetry helper library
+        </span>
+    </a>
+    
+    <a href="https://github.com/worldline-go/auth" class="repo-item flex-1 min-w-[10rem] flex flex-col" target="_blank" title="auth">
+        <title class="bg-gray-300 block px-1 text-black overflow-hidden text-ellipsis whitespace-nowrap">
+            auth
+        </title>
+        <span class="px-1 block bg-bg-light flex-1">
+            Authentication and authorization library
+        </span>
+    </a>
+    
+    <a href="https://github.com/worldline-go/struct2" class="repo-item flex-1 min-w-[10rem] flex flex-col" target="_blank" title="struct2">
+        <title class="bg-gray-300 block px-1 text-black overflow-hidden text-ellipsis whitespace-nowrap">
+            struct2
+        </title>
+        <span class="px-1 block bg-bg-light flex-1">
+            Struct to map and map to struct, modified version of mapstructure,structs
+        </span>
+    </a>
+    
+    <a href="https://github.com/worldline-go/logz" class="repo-item flex-1 min-w-[10rem] flex flex-col" target="_blank" title="logz">
+        <title class="bg-gray-300 block px-1 text-black overflow-hidden text-ellipsis whitespace-nowrap">
+            logz
+        </title>
+        <span class="px-1 block bg-bg-light flex-1">
+            Zerolog adapters and initializer
+        </span>
+    </a>
+    
+    <a href="https://github.com/worldline-go/utility" class="repo-item flex-1 min-w-[10rem] flex flex-col" target="_blank" title="utility">
+        <title class="bg-gray-300 block px-1 text-black overflow-hidden text-ellipsis whitespace-nowrap">
+            utility
+        </title>
+        <span class="px-1 block bg-bg-light flex-1">
+            Utility modules for Go
+        </span>
+    </a>
+    
+    <a href="https://github.com/worldline-go/choreograph" class="repo-item flex-1 min-w-[10rem] flex flex-col" target="_blank" title="choreograph">
+        <title class="bg-gray-300 block px-1 text-black overflow-hidden text-ellipsis whitespace-nowrap">
+            choreograph
+        </title>
+        <span class="px-1 block bg-bg-light flex-1">
+            A sequentially executing processor
+        </span>
+    </a>
+    
+    <a href="https://github.com/worldline-go/pong" class="repo-item flex-1 min-w-[10rem] flex flex-col" target="_blank" title="pong">
+        <title class="bg-gray-300 block px-1 text-black overflow-hidden text-ellipsis whitespace-nowrap">
+            pong
+        </title>
+        <span class="px-1 block bg-bg-light flex-1">
+            Ping and health check library
+        </span>
+    </a>
+    
+    <a href="https://github.com/worldline-go/igmigrator" class="repo-item flex-1 min-w-[10rem] flex flex-col" target="_blank" title="igmigrator">
+        <title class="bg-gray-300 block px-1 text-black overflow-hidden text-ellipsis whitespace-nowrap">
+            igmigrator
+        </title>
+        <span class="px-1 block bg-bg-light flex-1">
+            SQL database migration library
+        </span>
+    </a>
+    
+    <a href="https://github.com/worldline-go/hardloop" class="repo-item flex-1 min-w-[10rem] flex flex-col" target="_blank" title="hardloop">
+        <title class="bg-gray-300 block px-1 text-black overflow-hidden text-ellipsis whitespace-nowrap">
+            hardloop
+        </title>
+        <span class="px-1 block bg-bg-light flex-1">
+            Keep function running in specific time ranges in Go
+        </span>
+    </a>
+    
+    <a href="https://github.com/worldline-go/trange" class="repo-item flex-1 min-w-[10rem] flex flex-col" target="_blank" title="trange">
+        <title class="bg-gray-300 block px-1 text-black overflow-hidden text-ellipsis whitespace-nowrap">
+            trange
+        </title>
+        <span class="px-1 block bg-bg-light flex-1">
+            Get time range by given date
+        </span>
+    </a>
+    
+    <a href="https://github.com/worldline-go/docker-image-scanner" class="repo-item flex-1 min-w-[10rem] flex flex-col" target="_blank" title="docker-image-scanner">
+        <title class="bg-gray-300 block px-1 text-black overflow-hidden text-ellipsis whitespace-nowrap">
+            docker-image-scanner
+        </title>
+        <span class="px-1 block bg-bg-light flex-1">
+            Security Vulnerability and Compliance Audit Scanner
+        </span>
+    </a>
+    
+    <a href="https://github.com/worldline-go/guide" class="repo-item flex-1 min-w-[10rem] flex flex-col" target="_blank" title="guide">
+        <title class="bg-gray-300 block px-1 text-black overflow-hidden text-ellipsis whitespace-nowrap">
+            guide
+        </title>
+        <span class="px-1 block bg-bg-light flex-1">
+            Code Style Guide
+        </span>
+    </a>
+    
+</div>
+            <div x-data x-show="$store.selection.active == 'files'" x-init="$el.classList.remove('hidden')" class="py-2 flex gap-2 hidden">
+    <table class="w-full">
+        <thead>
+            <tr>
+                <th class="text-left">Name</th>
+                <th class="text-left">Size</th>
+                <th class="text-left">Modified</th>
+            </tr>
+        </thead>
+        <tbody @click.capture="(e) => listDir(e)">
+            
+            
+            <tr class="item-list" data-url="https://worldline-go.github.io/tell/info.json" data-open="tell" data-type="dir" data-inner="1">
+                <td>
+                    📁 tell
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+            </tr>
+            
+            
+        </tbody>
+    </table>
+</div>
+
+        </div>
+    </div>
+</div>
+    <footer class="bg-bg-light">
+    <div class="container mx-auto px-1">
+        <span class="float-right text-gray-400">
+            2023-13-03 | Hoofddorp - NL | <a class="hover:text-hl" href="https://github.com/rytsh/mugo" target="_blank">mugo</a>
+        </span>
+    </div>
+</footer>
+
+</body>
+</html>
