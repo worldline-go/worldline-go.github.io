@@ -1,10 +1,9 @@
-const tailwindcss = require('tailwindcss')
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./template/**/*.html",
     "./scripts/*.ts",
+    "./style/*.scss",
   ],
   theme: {
     extend: {
@@ -16,4 +15,3 @@ module.exports = {
     },
   },
 }
-

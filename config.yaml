@@ -13,6 +13,30 @@ files:
     url: https://worldline-go.github.io/tell/info.json
 
 repos:
+  - name: initializer
+    url: https://github.com/worldline-go/initializer
+    info: Initializer for Go projects
+  - name: wkafka
+    url: https://github.com/worldline-go/wkafka
+    info: Kafka producer and consumer library
+  - name: klient
+    url: https://github.com/worldline-go/klient
+    info: HTTP client library
+  - name: test
+    url: https://github.com/worldline-go/test
+    info: Test helper library
+  - name: bucket
+    url: https://github.com/worldline-go/bucket
+    info: Concurrent list processing
+  - name: cache
+    url: https://github.com/worldline-go/cache
+    info: Cache library with different implementations
+  - name: types
+    url: https://github.com/worldline-go/types
+    info: Common types for safe use
+  - name: gRPC
+    url: https://github.com/worldline-go/grpc
+    info: gRPC common protos
   - name: chore
     url: https://github.com/worldline-go/chore
     info: Requests with control-flows
