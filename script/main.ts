@@ -71,6 +71,7 @@ const listDir = async (e: Event) => {
         Object.keys(result).forEach((name: string) => {
             const tr = document.createElement('tr');
             tr.classList.add('item-list');
+            tr.setAttribute('title', result[name].url)
             tr.setAttribute('data-collapse', `${open}-${inner}`);
             tr.setAttribute('data-type', result[name].isDir ? 'dir' : 'file');
             tr.setAttribute('data-url', result[name].url);

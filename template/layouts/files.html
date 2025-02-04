@@ -10,7 +10,7 @@
         <tbody @click.capture="(e) => listDir(e)">
             {{ range $k, $v := .files }}
             {{ if not (empty .url) }}
-            <tr class="item-list" data-url="{{$v.url}}" data-open="{{$k}}" data-type="{{ternary "dir" "file" $v.isDir}}" data-inner="1">
+            <tr class="item-list" title="{{$v.url}}" data-url="{{$v.url}}" data-open="{{$k}}" data-type="{{ternary "dir" "file" $v.isDir}}" data-inner="1">
                 <td>
                     📁 {{$k}}
                 </td>

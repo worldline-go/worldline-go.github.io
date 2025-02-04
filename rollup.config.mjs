@@ -1,5 +1,5 @@
 import terser from '@rollup/plugin-terser';
-import ts from "rollup-plugin-ts";
+import ts from "@rollup/plugin-typescript";
 
 export default {
 	input: 'script/main.ts',
@@ -10,8 +10,7 @@ export default {
 	},
 	plugins: [
 		ts({
-			tsconfig: "tsconfig.json",
-			transpiler: "swc",
-		})
+			tsconfig: 'tsconfig.json',
+		}),
 	],
 };

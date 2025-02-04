@@ -49,24 +49,15 @@ repos:
   - name: tell
     url: https://github.com/worldline-go/tell
     info: OpenTelemetry helper library
-  - name: auth
-    url: https://github.com/worldline-go/auth
-    info: Authentication and authorization library
   - name: struct2
     url: https://github.com/worldline-go/struct2
     info: Struct to map and map to struct, modified version of mapstructure,structs
   - name: logz
     url: https://github.com/worldline-go/logz
     info: Zerolog adapters and initializer
-  - name: utility
-    url: https://github.com/worldline-go/utility
-    info: Utility modules for Go
   - name: choreograph
     url: https://github.com/worldline-go/choreograph
     info: A sequentially executing processor
-  - name: pong
-    url: https://github.com/worldline-go/pong
-    info: Ping and health check library
   - name: igmigrator
     url: https://github.com/worldline-go/igmigrator
     info: SQL database migration library
@@ -76,9 +67,3 @@ repos:
   - name: trange
     url: https://github.com/worldline-go/trange
     info: Get time range by given date
-  - name: docker-image-scanner
-    url: https://github.com/worldline-go/docker-image-scanner
-    info: Security Vulnerability and Compliance Audit Scanner
-  - name: guide
-    url: https://github.com/worldline-go/guide
-    info: Code Style Guide
